@@ -1,7 +1,7 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
-url="https://ai-dev.tistory.com/2"
+url="https:"+"//ai-dev.tistory.com/2"
 html = urlopen(url)
 bs_obj=BeautifulSoup(html,"html.parser")
 title=bs_obj.find_all("h1")
